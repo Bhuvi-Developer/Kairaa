@@ -1,0 +1,95 @@
+/* Navbar.css */
+
+/* Light Mode */
+:root {
+    --primary-color: #6a59ff;
+    --background-light: #ffffff;
+    --text-light: #000000;
+  
+    --primary-color-dark: #6a59ff;
+    --background-dark: #222224;
+    --text-dark: #ffffff;
+  
+    --background: var(--background-light);
+    --text-color: var(--text-light);
+  }
+  
+  /* Dark Mode */
+  [data-theme="dark"] {
+    --background: var(--background-dark);
+    --text-color: var(--text-dark);
+  }
+  
+  /* Global body styles for both themes */
+  body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Navbar styles */
+  .MuiAppBar-root {
+    box-shadow: none;
+  }
+  
+  .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  
+  .MuiTypography-h6 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .MuiButton-root {
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .MuiButton-root:hover {
+    color: var(--primary-color);
+  }
+  
+  .MuiSwitch-root {
+    color: var(--text-color);
+  }
+  
+  /* Mobile menu */
+  .MuiDrawer-root {
+    width: 250px;
+  }
+  
+  .MuiListItem-root {
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .MuiListItemText-root {
+    text-align: center;
+  }
+  
+  .MuiListItem-root:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .MuiAppBar-root {
+      padding: 0 10px;
+    }
+  
+    .MuiTypography-h6 {
+      font-size: 1.5rem;
+    }
+  
+    .MuiButton-root {
+      font-size: 0.9rem;
+    }
+  }
+  

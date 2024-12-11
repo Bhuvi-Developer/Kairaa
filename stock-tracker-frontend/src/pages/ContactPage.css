@@ -1,0 +1,19 @@
+/* In your styles.css or similar */
+.contact-form {
+    padding: 20px;
+  }
+  
+  .contact-form .MuiTextField-root {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form button {
+    margin-top: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-form {
+      padding: 15px;
+    }
+  }
+  

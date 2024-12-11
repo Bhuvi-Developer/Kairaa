@@ -1,0 +1,66 @@
+/* General container styling */
+.chart-page {
+    padding: 16px;
+  }
+  
+  /* Style for the TradingView widget container */
+  .tradingview-widget-container {
+    margin-bottom: 32px; /* Space between the ticker tape and the grid */
+  }
+  
+  /* Grid layout adjustments */
+  .MuiGrid2-root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Styling for the TradingView widget item */
+  .MuiPaper-root {
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for Left and Right Sidebar */
+  .MuiGrid2-item {
+    margin-bottom: 16px; /* Space between the sidebars and other content */
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Mobile responsiveness for the grid */
+  @media (max-width: 768px) {
+    /* Ensure that sidebars are not visible on smaller screens */
+    .MuiGrid2-item {
+      width: 100%; /* Full width for each section on smaller screens */
+      margin-bottom: 16px; /* Space between the sections */
+    }
+  
+    /* Adjust the ticker tape container */
+    .tradingview-widget-container {
+      margin-bottom: 16px; /* Reduced space for mobile */
+    }
+  
+    /* Adjust padding for the content on mobile */
+    .MuiPaper-root {
+      padding: 12px;
+    }
+  }
+  
+  /* For very small screens (like phones in portrait mode) */
+  @media (max-width: 480px) {
+    .MuiTypography-body2 {
+      font-size: 0.75rem; /* Adjust font size for body text */
+    }
+  
+    /* Make sure the widget stretches well on small screens */
+    .view {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
